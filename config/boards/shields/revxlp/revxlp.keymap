@@ -30,7 +30,7 @@
                                 &mt LGUI ESC   &mt LALT BSPC     &mt LCTRL SPACE     &lt 3 RET  &lt SYNUM DEL  &lt 6 GRAVE
             >;
         };
-        /*
+        
         syn_num_layer {
             label = "Symbols&Numpad-1";
             bindings = <
@@ -90,6 +90,6 @@
                                            &tog 5   &tog 4       &trans       &trans     &trans    &kp KP_N0
             >;
         };
-        */
+        
     };
 };
