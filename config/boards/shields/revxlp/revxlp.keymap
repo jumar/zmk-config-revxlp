@@ -99,17 +99,16 @@
                 compatible = "zmk,keymap";
 
         qwerty_layer {
-            label = "Qwerty";
+            label = "Qwerty-0";
             bindings = <
        &kp TAB    &kp Q      &kp W          &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O          &kp P     &kp BSPC
        &kp CAPS   &lt 2 A    &mt LSHIFT S   &lt 3 D     &mt LCTRL F    &kp G         &kp H            &mt RCTRL J    &lt 5 K     &kp RSHIFT L   &kp SEMI  &kp QUOT
        &kp LSHFT  &kp Z      &kp X          &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT        &kp SLASH &kp BACKSLASH
-                                &mt LGUI ESC   &mt ALT BSPC     &mt LCTRL SPACE     &lt 3 ENTER  &lt 1 DEL &lt 6 GRAVE
             >;
         };
 
-        nav_layer {
-            label = "Nav";
+        syn_num_layer {
+            label = "Symbols&Numpad-1";
             bindings = <
        &none         &trans     &trans     &trans      &trans          &trans       &kp GRAVE        &kp TAB        &kp GRAVE   &kp BKSP   &kp DEL &none
        &none         &sk LSHFT  &sk LALT   &sk LCTRL   &sk LGUI        &trans       &kp TAB          &kp LARW       &kp DARW    &kp UARW   &kp RARW &none
