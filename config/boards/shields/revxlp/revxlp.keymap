@@ -9,10 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define NAV_L 1
-#define NUM_L 2
-#define MED_L 3
-#define FUN_L 4
+#define _0_QWERTY           0
+#define _1_SYMBOLS_NUMPAD   1
+#define _2_MOUSE_MEDIA      2
+#define _3_NAV              3
+#define _4_GAM              4
+#define _5_RGB              5
+#define _6_FN               6
 
 / {
     tap_dances {
@@ -24,7 +27,7 @@
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
     };
-
+    /*
     cond_layers {
         compatible = "zmk,conditional-layers";
 	tri {
@@ -32,6 +35,8 @@
 	    then-layer = <MED_L>;
         };
     };
+    */
+    /*
     combos {
         compatible = "zmk,combos";
 
@@ -88,32 +93,20 @@
 	};
 
     };
-
+    */
 
         keymap {
                 compatible = "zmk,keymap";
 
-#ifdef QWERTY_BASE
         qwerty_layer {
             label = "Qwerty";
             bindings = <
-       &none        &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P    &none
-       &none        &kp A      &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp QUOT &none
-       &none        &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp SEMI &none
-                                          &none   &mo NAV_L      &shifty      &kp SPACE  &mo NUM_L &none
+       &kp TAB    &kp Q      &kp W          &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O          &kp P     &kp BSPC
+       &kp CAPS   &lt 2 A    &mt LSHIFT S   &lt 3 D     &mt LCTRL F    &kp G         &kp H            &mt RCTRL J    &lt 5 K     &kp RSHIFT L   &kp SEMI  &kp QUOT
+       &kp LSHFT  &kp Z      &kp X          &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT        &kp SLASH &kp BACKSLASH
+                                &mt LGUI ESC   &mt ALT BSPC     &mt LCTRL SPACE     &lt 3 ENTER  &lt 1 DEL &lt 6 GRAVE
             >;
         };
-#else
-        colemak_dhm_layer {
-            label = "Base";
-            bindings = <
-       &none        &kp Q      &kp W      &kp F       &kp P          &kp B         &kp J            &kp L          &kp U       &kp Y      &kp QUOT &none
-       &none        &kp A      &kp R      &kp S       &kp T          &kp G         &kp M            &kp N          &kp E       &kp I      &kp O    &none
-       &none        &kp Z      &kp X      &kp C       &kp D          &kp V         &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI &none     
-                                          &none       &mo NAV_L      &shifty      &kp SPACE        &mo NUM_L &none
-            >;
-        };
-#endif
 
         nav_layer {
             label = "Nav";
