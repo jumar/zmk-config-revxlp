@@ -15,14 +15,9 @@
 #define MOMED  2
 #define NAV    3
 #define GAM    4
-#define RGB    5
-#define FN     6
+#define FN     5
 
 / {
-    chosen {
-        zmk,backlight = &backlight;
-    };
-    
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,7 +37,7 @@
 &kp ESC   &kp EXCL     &kp EQUAL  &kp LPAR  &kp RPAR  &kp PIPE   &kp UNDER   &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_PLUS     &none
 &none     &kp PERCENT  &kp ASTRK  &kp LBRC  &kp RBRC  &kp AMPS   &kp AT      &kp KP_N4   &kp KP_N5  &kp KP_N6  &kp KP_MINUS    &none
 &none     &kp HASH     &kp CARET  &kp LBKT  &kp RBKT  &kp TILDE  &kp DOLLAR  &kp KP_N1   &kp KP_N2  &kp KP_N3  &kp KP_ASTERISK &none
-                                  &tog RGB   &tog GAM   &trans   &trans   &trans   &kp KP_N0
+                                  &none   &tog GAM   &trans   &trans   &trans   &kp KP_N0
             >;
         };
 
@@ -52,7 +47,7 @@
 &bt BT_SEL 0 &none  &none  &none  &none  &bt BT_CLR  &none  &none  &none  &none  &none  &none
 &bt BT_SEL 1 &none  &none  &none  &none  &none       &none  &none  &none  &none  &none  &none
 &bt BT_SEL 2 &none  &none  &none  &none  &none       &none  &none  &none  &none  &none  &none
-                            &none  &none  &none     &none  &none  &none 
+                            &none  &none  &none     &none  &mkp LCLK  &none 
             >;
         };
 
@@ -75,19 +70,9 @@
                     &kp GRAVE   &kp LALT   &kp SPACE    &kp ENTER   &kp DEL   &tog GAM
             >;
         };
-        
-        rgb_layer {
-            label = "RGB-5";
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none  &rgb_ug RGB_BRI  &none  &rgb_ug RGB_EFF  &none  &rgb_ug RGB_TOG
-&none  &none  &none  &none  &none  &none  &none  &rgb_ug RGB_BRD  &none  &rgb_ug RGB_EFR  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none            &none  &none  &none  &none
-                     &none  &none  &none  &none  &none  &tog RGB 
-            >;
-        };
 
         fn_layer {
-            label = "FN-6";
+            label = "FN-5";
             bindings = <
 &none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none   &none  &none     &none     &none
 &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &trans  &none  &trans    &kp UP    &none
