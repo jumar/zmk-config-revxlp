@@ -44,7 +44,7 @@
         mouse_media_layer {
             label = "Mouse&Media-2";
             bindings = <
-&bt BT_SEL 0 &none  &none  &none  &none  &bt BT_CLR  &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0 &none  &none  &none  &none  &bt BT_CLR  &none  &none  &mmv MOVE_UP  &none  &none  &none
 &bt BT_SEL 1 &none  &none  &none  &none  &none       &none  &none  &none  &none  &none  &none
 &bt BT_SEL 2 &none  &none  &none  &none  &none       &none  &none  &none  &none  &none  &none
                             &none  &none  &none     &mkp RCLK  &mkp LCLK  &mkp MCLK 
