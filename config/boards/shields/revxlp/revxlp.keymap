@@ -15,7 +15,7 @@
 #define MOMED  2
 #define NAV    3
 #define FN     4
-
+#define U_MOUSE_MOVE_MAX 1400 
 / {
     keymap {
         compatible = "zmk,keymap";
