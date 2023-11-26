@@ -24,10 +24,10 @@
         qwerty_layer {
             label = "Qwerty-0";
             bindings = <
-&kp TAB     &kp Q         &kp W          &kp E       &kp R         &kp T   &kp Y   &kp U         &kp I       &kp O          &kp P       &kp BSPC
-&kp CAPS    &lt MOMED A   &mt LSHIFT S   &lt NAV D   &mt LCTRL F   &kp G   &kp H   &mt RCTRL J   &kp K       &mt RSHIFT L   &kp SEMI    &kp QUOT
-&kp LSHFT   &kp Z         &kp X          &kp C       &kp V         &kp B   &kp N   &kp M         &kp COMMA   &kp DOT        &kp SLASH   &kp BACKSLASH
-                            &mt LGUI ESC  &mt LALT BSPC  &mt LCTRL SPACE  &lt NAV RET  &lt SYNUM DEL  &lt FN GRAVE
+&kp TAB     &kp Q         &kp W          &kp E        &kp R         &kp T   &kp Y   &kp U         &kp I       &kp O          &kp P       &kp BSPC
+&kp CAPS    &lt MOMED A   &mt LSHIFT S   &mt LALT D   &mt LCTRL F   &kp G   &kp H   &mt RCTRL J   &kp K       &mt RSHIFT L   &kp SEMI    &kp QUOT
+&kp LSHFT   &kp Z         &kp X          &kp C        &kp V         &kp B   &kp N   &kp M         &kp COMMA   &kp DOT        &kp SLASH   &kp BACKSLASH
+                              &mt LGUI ESC  &lt NAV TAB  &mt LCTRL SPACE  &lt NAV RET  &lt SYNUM BSPC  &lt FN GRAVE
             >;
         };
         
@@ -54,10 +54,10 @@
         nav_layer {
             label = "Navigation-3";
             bindings = <
-&kp PSCRN  &none  &none   &none   &none   &none  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none      &kp PSCRN
-&none      &none  &trans  &trans  &trans  &none  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  &none
-&none      &none  &none   &none   &none   &none  &kp INS    &none     &none     &none      &none      &none
-                          &trans  &trans  &trans &trans     &kp K_APP &none
+&kp PSCRN  &kp PSCRN  &none   &none   &none   &none  &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp PSCRN   &kp PSCRN
+&none      &none      &trans  &trans  &trans  &none  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP   &none
+&none      &none      &none   &none   &none   &none  &kp INS    &none     &none     &none      &none       &none
+                              &trans  &trans  &trans  &trans  &kp DEL  &kp K_APP
             >;
         };
 
@@ -74,9 +74,9 @@
         fn_layer {
             label = "FN-5";
             bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none   &none  &none     &none     &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &trans  &none  &trans    &kp UP    &none
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F12  &none  &none   &none  &kp LEFT  &kp DOWN  &kp RIGHT
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none   &none     &none     &none       &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &trans  &trans    &kp UP    &none       &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F12  &none  &none   &kp LEFT  &kp DOWN  &kp RIGHT   &none
                       &trans  &trans  &trans   &trans &trans  &trans 
             >;
         };
