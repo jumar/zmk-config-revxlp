@@ -18,10 +18,6 @@
 #define RGB    5
 
 / {
-    chosen {
-            zmk,backlight = &backlight;
-           };
-
     keymap {
         compatible = "zmk,keymap";
 
