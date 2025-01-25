@@ -55,7 +55,7 @@
         syn_num_layer {
             label = "Symbols&Numpad-1";
             bindings = <
-&kp ESC   &kp EXCL     &kp EQUAL          &kp LPAR   &kp RPAR   &kp PIPE    &kp UNDER    &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS       &kp KP_NLCK
+&kp ESC   &kp EXCL     &kp EQUAL          &kp LPAR   &kp RPAR   &kp PIPE    &kp UNDER    &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS       &kp KP_NUM
 &none     &kp PERCENT  &bhm LSHIFT ASTRK  &kp LBRC   &kp RBRC   &kp AMPS    &kp AT       &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS      &none
 &none     &kp HASH     &kp CARET          &kp LBKT   &kp RBKT   &kp TILDE   &kp DOLLAR   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_ASTERISK   &none
                                         &none   &tog GAM   &trans   &trans   &trans   &kp KP_N0
